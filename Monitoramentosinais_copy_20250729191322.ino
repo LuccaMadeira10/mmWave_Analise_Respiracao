@@ -20,9 +20,7 @@ void loop() {
 if (mmWave.update(100)) {
  float total_phase, breath_phase, heart_phase;
  if (mmWave.getHeartBreathPhases(total_phase, breath_phase, heart_phase)) {
-   Serial.print(breath_phase);
-   Serial.print(",");
-   Serial.println(20);
+   Serial.print(breath_phase); // o codigo so vai puxar a taxa de respiração
  }
 }
 }
